@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Silow — for insurance operations</title><!-- rev:ins-v14-report-before-plan -->
+<title>Silow — for insurance operations</title><!-- rev:ins-v15-report-detail-slides -->
 <style>
   @font-face { font-family:"Suisse Intl"; src:url("./fonts/SuisseIntl-Regular.otf") format("opentype"); font-weight:400; font-display:swap; }
   @font-face { font-family:"Suisse Intl"; src:url("./fonts/SuisseIntl-Medium.otf") format("opentype"); font-weight:500; font-display:swap; }
@@ -662,6 +662,15 @@
  .onprem-main{gap:24px;margin-top:26px;}
  .cloud-option{font-size:16px;}
 }
+/* New report-explainer slides only; no external left-hand copy. */
+.report-feature .pf-head{width:100%;}
+.report-feature .feature-description{max-width:1100px;margin:12px auto 0;font-size:clamp(17px,1.35vw,22px);line-height:1.42;color:var(--mute);}
+.report-feature .appframe{margin-top:20px;}
+@media(max-width:900px){
+ .report-feature .feature-description{font-size:18px;max-width:34em;padding:0 6px;}
+ .report-feature .pf-head h2{font-size:34px;line-height:1.12;}
+ .report-feature .appframe{height:76vh;}
+}
 </style>
 </head>
 <body>
@@ -703,9 +712,57 @@
     <div class="pf-foot rise d3"><span>Harbor Mutual · fictional sample data</span><a class="pf-open" href="app/#company" target="_blank" rel="noopener">Open full screen ↗</a></div>
   </section>
 
+  <section class="platform-slide report-feature" data-product="time-breakdown">
+    <div class="pf-head">
+      <div class="eyebrow rise">What you get <b>·</b> 02 / time breakdown</div>
+      <h2 class="rise d1">Time breakdown. <em>Where time actually goes.</em></h2>
+      <p class="feature-description rise d1">By app, by process, as a share of the day. Usually the first surprise.</p>
+    </div>
+    <div class="appframe rise d2">
+      <iframe id="time-breakdown-frame" title="Silow time breakdown — interactive fictional sample" data-src="app/?embed=1#person/rachel" data-focus-text="Where the"></iframe>
+    </div>
+    <div class="pf-foot rise d3"><span>Harbor Mutual · fictional sample data</span><a class="pf-open" href="app/#person/rachel" target="_blank" rel="noopener">Open full screen ↗</a></div>
+  </section>
+
+  <section class="platform-slide report-feature" data-product="trends">
+    <div class="pf-head">
+      <div class="eyebrow rise">What you get <b>·</b> 03 / trends</div>
+      <h2 class="rise d1">Trends. <em>What’s changing over time.</em></h2>
+      <p class="feature-description rise d1">What’s growing, what’s shrinking, where the pressure is.</p>
+    </div>
+    <div class="appframe rise d2">
+      <iframe id="trends-frame" title="Silow trends — interactive fictional sample" data-src="app/?embed=1#team/fin" data-focus-text="Three-week trend"></iframe>
+    </div>
+    <div class="pf-foot rise d3"><span>Harbor Mutual · fictional sample data</span><a class="pf-open" href="app/#team/fin" target="_blank" rel="noopener">Open full screen ↗</a></div>
+  </section>
+
+  <section class="platform-slide report-feature" data-product="workflows">
+    <div class="pf-head">
+      <div class="eyebrow rise">What you get <b>·</b> 04 / workflows</div>
+      <h2 class="rise d1">Workflows. <em>The whole chain, step by step.</em></h2>
+      <p class="feature-description rise d1">The actual sequence across apps — not just the part visible inside one tool.</p>
+    </div>
+    <div class="appframe rise d2">
+      <iframe id="workflows-frame" title="Silow workflows — interactive fictional sample" data-src="app/?embed=1#process/p2" data-focus-selector=".pmap"></iframe>
+    </div>
+    <div class="pf-foot rise d3"><span>Harbor Mutual · fictional sample data</span><a class="pf-open" href="app/#process/p2" target="_blank" rel="noopener">Open full screen ↗</a></div>
+  </section>
+
+  <section class="platform-slide report-feature" data-product="customization">
+    <div class="pf-head">
+      <div class="eyebrow rise">What you get <b>·</b> 05 / customization</div>
+      <h2 class="rise d1">Customization. <em>Built around your questions.</em></h2>
+      <p class="feature-description rise d1">All the data sits in one place. We can cut it by department, workflow or role — and build reports around the questions you actually have.</p>
+    </div>
+    <div class="appframe rise d2">
+      <iframe id="customization-frame" title="Silow customization — interactive fictional sample" data-src="app/?embed=1#team/fin"></iframe>
+    </div>
+    <div class="pf-foot rise d3"><span>Harbor Mutual · fictional sample data</span><a class="pf-open" href="app/#team/fin" target="_blank" rel="noopener">Open full screen ↗</a></div>
+  </section>
+
   <section class="platform-slide" data-product="automation-plan">
     <div class="pf-head">
-      <div class="eyebrow rise">What you get <b>·</b> 02 / automation plan</div>
+      <div class="eyebrow rise">What you get <b>·</b> 06 / automation plan</div>
       <h2 class="rise d1">What to change. <em>Where to start.</em></h2>
     </div>
     <div class="appframe rise d2">
@@ -720,7 +777,7 @@
 
   <section class="platform-slide" data-product="manager">
     <div class="pf-head">
-      <div class="eyebrow rise">What you get <b>·</b> 03 / manager application view</div>
+      <div class="eyebrow rise">What you get <b>·</b> 07 / manager application view</div>
       <h2 class="rise d1">A team report <em>for the next decision.</em></h2>
     </div>
     <div class="appframe rise d2">
@@ -731,7 +788,7 @@
 
   <section class="platform-slide" data-product="individual">
     <div class="pf-head">
-      <div class="eyebrow rise">What you get <b>·</b> 04 / individual application view</div>
+      <div class="eyebrow rise">What you get <b>·</b> 08 / individual application view</div>
       <h2 class="rise d1">The individual report. <em>Finance in detail.</em></h2>
     </div>
     <div class="appframe rise d2">
@@ -902,11 +959,26 @@
 
 
 <script>
-/* Two independent app documents; lazy loading only, no deck navigation bridge. */
+/* Independent app documents; lazy loading and report focus only. */
 (() => {
   const deck = document.getElementById('deck');
   const frames = [...document.querySelectorAll('.appframe iframe[data-src]')];
   frames.forEach(frame => {
+    if (frame.dataset.focusText || frame.dataset.focusSelector) {
+      frame.addEventListener('load', () => {
+        const doc = frame.contentDocument;
+        if (!doc) return;
+        doc.fonts.ready.then(() => requestAnimationFrame(() => {
+          const target = frame.dataset.focusSelector ? doc.querySelector(frame.dataset.focusSelector) :
+            [...doc.querySelectorAll('#sbody .sec')].find(section =>
+              section.querySelector('h2')?.textContent.includes(frame.dataset.focusText));
+          const scroll = doc.getElementById('sbody');
+          if (!target || !scroll) { frame.dataset.focusError = 'Report section missing'; return; }
+          scroll.scrollTop += target.getBoundingClientRect().top - scroll.getBoundingClientRect().top - 20;
+          frame.dataset.focusReady = 'true';
+        }));
+      }, {once: true});
+    }
     const observer = new IntersectionObserver(entries => {
       if (entries.some(entry => entry.isIntersecting)) {
         if (!frame.hasAttribute('src')) frame.src = frame.dataset.src;
